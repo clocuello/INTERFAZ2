@@ -1,2 +1,2 @@
-# INTERFAZ2
+# INTERFAZ 2
 ### EJERCICIO N° 1 ARDUINO: "Hola Mundo:)"
