@@ -96,6 +96,8 @@ void loop() {
   }
 }
 ```
+<img src=" width="1024" height="550" />
+
 ### EJERCICIO N°5 LED POTENCIOMETRO
 
 ```js
@@ -108,3 +110,4 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 }
 ```
+<img src=" width="1024" height="550" />
