@@ -79,7 +79,7 @@ void loop() {   // Se repite infinitamente
   //delay(1000);             // Esperar 1 segundo
 }
 ```
-https://github.com/clocuello/INTERFAZ2/blob/main/img/LED_PARPADEANTE.png
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/LED_PARPADEANTE.png" width="1024" height="550" />
 
 ### EJERCICIO N° 4 LED PULSADOR
 
