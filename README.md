@@ -94,7 +94,7 @@ void loop() {
   }
 }
 ```
-### EJERCICIO N°5 
+### EJERCICIO N°5 LED POTENCIOMETRO
 
 ```js
 void setup() {
