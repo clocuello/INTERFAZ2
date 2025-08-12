@@ -60,7 +60,7 @@ void loop() {
   delay(2000); // 2 segundos
 }
 ```
-<img src="" width="1024" height="550" />
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/SEMAFORO.png" width="1024" height="550" />
 ### EJERCICIO N° 3 LED PARPADEANTE
 
 ```js
