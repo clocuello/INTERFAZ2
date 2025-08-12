@@ -1,5 +1,5 @@
-# INTERFAZ 2
-### EJERCICIO N° 1 ARDUINO: "Hola Mundo:)"
+# INTERFAZ II
+### EJERCICIO N° 1: ARDUINO: "Hola Mundo:)"
 
 ```js
 void setup() {
@@ -12,7 +12,7 @@ void loop() {
 }
 ```
 
-### EJERCICIO N° 2 SEMAFORO ARDUINO
+### EJERCICIO N° 2: SEMAFORO ARDUINO
 
 ```js
 // C++ code - Semáforo Autos y Peatones
@@ -61,7 +61,7 @@ void loop() {
 }
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/SEMAFORO.png" width="1024" height="550" />
-### EJERCICIO N° 3 LED PARPADEANTE
+### EJERCICIO N° 3: LED PARPADEANTE
 
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)
@@ -82,7 +82,7 @@ void loop() {   // Se repite infinitamente
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/LED_PARPADEANTE.png" width="1024" height="550" />
 
-### EJERCICIO N° 4 LED PULSADOR
+### EJERCICIO N° 4: LED PULSADOR
 
 ```js
 void setup() {
@@ -99,7 +99,7 @@ void loop() {
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/LED_PULSADOR.png" width="1024" height="550" />
 
-### EJERCICIO N°5 LED POTENCIOMETRO
+### EJERCICIO N° 5: LED POTENCIOMETRO
 
 ```js
 void setup() {
