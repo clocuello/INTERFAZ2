@@ -61,6 +61,7 @@ void loop() {
 }
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/SEMAFORO.png" width="1024" height="550" />
+
 ### EJERCICIO N° 3: LED PARPADEANTE
 
 ```js
