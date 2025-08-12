@@ -96,7 +96,7 @@ void loop() {
   }
 }
 ```
-<img src=" width="1024" height="550" />
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/LED_PULSADOR.png" width="1024" height="550" />
 
 ### EJERCICIO N°5 LED POTENCIOMETRO
 
