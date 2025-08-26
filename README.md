@@ -127,3 +127,60 @@ void loop() {
 }
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/LED_POTENCIOMETRO.png" width="1024" height="550" />
+
+### EJERCICIO N° 6: ARDUINO PROCESSING
+
+```js
+import processing.serial.*;
+
+Serial myPort;  // Crear objeto de la clase Serial
+static String val;    // Datos recibidos desde el puerto serial
+int sensorVal = 0;
+
+void setup()
+{
+  background(0); 
+  //fullScreen(P3D);
+   size(1080, 720);
+   noStroke();
+  noFill();
+  String portName = "COM3";// Cambia el número (en este caso) para que coincida con el puerto correspondiente conectado a tu Arduino. 
+
+  //myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+  myPort = new Serial(this, Serial.list()[0], 9600);
+
+}
+
+void draw()
+{
+  if ( myPort.available() > 0) {  // Si hay datos disponibles,
+  val = myPort.readStringUntil('\n'); 
+  try {
+   sensorVal = Integer.valueOf(val.trim());
+  }
+  catch(Exception e) {
+  ;
+  }
+  println(sensorVal); // léelos y guárdalos en vals!
+  }  
+// background(0);
+  // Escala el valor de mouseX de 0 a 640 a un rango entre 0 y 175
+  float c = map(sensorVal, 0, width, 0, 400);
+  // Escala el valor de mouseX de 0 a 640 a un rango entre 40 y 300
+  float d = map(sensorVal, 0, width, 40,500);
+  fill(255, c, 0);
+  ellipse(width/2, height/2, d, d);   
+    fill(255, c, 0);
+  ellipse(width/4, height/4, d, d);
+    fill(255, c, 0);
+  ellipse(width/4.5, height/4.5, d, d);   
+    fill(255, c, 0);
+  ellipse(width/6, height/6, d, d); 
+  
+    fill(255, c, 0);
+  ellipse(width/1.2, height/1.2, d, d); 
+    fill(255, c, 0);
+  ellipse(width/1.5, height/1.5, d, d);   
+}
+```
+
