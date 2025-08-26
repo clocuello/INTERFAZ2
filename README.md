@@ -183,4 +183,4 @@ void draw()
   ellipse(width/1.5, height/1.5, d, d);   
 }
 ```
-
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/Captura%20de%20pantalla%202025-08-26%20134316.png" width="1024" height="550" />
