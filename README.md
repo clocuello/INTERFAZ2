@@ -483,3 +483,4 @@ void playTrack(int index) {
   currentTrack = index;
 }
 ```
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/Botonera.png" width="1024" height="550" />
