@@ -519,3 +519,5 @@ void playTrack(int index) {
 }
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/Botonera.png" width="1024" height="550" />
+
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/BOTONERA.jpeg" width="1024" height="550" />
