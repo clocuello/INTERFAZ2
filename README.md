@@ -99,6 +99,8 @@ void loop() {   // Se repite infinitamente
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/LED_PARPADEANTE.png" width="1024" height="550" />
 
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/LED_PARPADEANTE.jpeg" width="1024" height="550" />
+
 ### EJERCICIO N° 4: LED PULSADOR
 
 ```js
@@ -115,6 +117,8 @@ void loop() {
 }
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/LED_PULSADOR.png" width="1024" height="550" />
+
+<img src=" " width="1024" height="550" />
 
 ### EJERCICIO N° 5: LED POTENCIOMETRO
 
