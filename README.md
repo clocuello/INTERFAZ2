@@ -134,6 +134,8 @@ void loop() {
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/img/LED_POTENCIOMETRO.png" width="1024" height="550" />
 
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/POTENCIOMETRO.jpeg" width="1024" height="550" />
+
 ### EJERCICIO N° 6: ARDUINO PROCESSING
 
 ```js
