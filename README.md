@@ -521,3 +521,92 @@ void playTrack(int index) {
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/Botonera.png" width="1024" height="550" />
 
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/BOTONERA.jpeg" width="1024" height="550" />
+
+### EJERCICIO IDEA PERSONAL: LED PARPADEANTE + POTENCIOMETRO 
+
+Este ejercicio hace que dos LEDs (rojo y verde) parpadeen uno después del otro, pero ahora la velocidad del parpadeo se puede controlar girando un potenciómetro.
+
+El codigo solo de los LEDs parpadeantes es:
+
+```js
+void setup() {  // Configuración inicial (ej: pines como entrada/salida)
+  pinMode(13, OUTPUT);  // Pin 13 como salida
+  pinMode(8, OUTPUT);  // Pin 8 como salida
+}
+
+void loop() {   // Se repite infinitamente
+  digitalWrite(13, HIGH);  // Encender LED
+  delay(1000);             // Esperar 1 segundo
+  digitalWrite(13, LOW);   // Apagar LED
+  //delay(1000);             // Esperar 1 segundo
+  digitalWrite(8, HIGH);  // Encender LED
+  delay(1000);             // Esperar 1 segundo
+  digitalWrite(8, LOW);   // Apagar LED
+  //delay(1000);             // Esperar 1 segundo
+}
+```
+
+Luego agregamos a este codigo la nueva funcion del Potenciómetro:
+
+```js
+int pot = A0;
+```
+*Esto indica que el Potenciómetro esta conectado al pin analógico A0.
+
+```js
+pinMode(pot, INPUT);
+```
+*Esto indicar al Arduino que se agrego la entrada del Potenciómetro.
+
+```js
+int valorPot = analogRead(pot);
+int tiempo = map(valorPot, 0, 1023, 100, 2000);
+```
+*Esto hace que el Potenciómetro controle la velocidad del parpadeo (siendo 0 y 1023 los dos extremos del Potenciómetro).
+
+```js
+delay(tiempo);
+```
+*Los delay(1000) del código original se cambiaron por delay(tiempo), para  que el tiempo dependa solo del Potenciómetro.
+
+
+Cómo funciona paso a paso:
+
+*Arduino lee el valor del potenciómetro.
+*Calcula el tiempo de espera según esa lectura.
+*Enciende el LED del pin 13, espera ese tiempo, y lo apaga.
+*Luego enciende el LED del pin 8, espera el mismo tiempo, y lo apaga.
+*Repite todo infinitamente.
+
+
+Codigo Final:
+
+```js
+int pot = A0;  // Pin analógico donde conectamos el potenciómetro
+
+void setup() {  // Configuración inicial
+  pinMode(13, OUTPUT);  // Pin 13 como salida
+  pinMode(8, OUTPUT);   // Pin 8 como salida
+  pinMode(pot, INPUT);  // Pin del potenciómetro como entrada
+}
+
+void loop() {   // Se repite infinitamente
+  int valorPot = analogRead(pot);  // Leer el potenciómetro (0 a 1023)
+  int tiempo = map(valorPot, 0, 1023, 100, 2000);  
+  // Convierte el valor a un rango de tiempo (100 ms a 2000 ms)
+
+  digitalWrite(13, HIGH);  // Encender LED 1
+  delay(tiempo);           // Esperar según el potenciómetro
+  digitalWrite(13, LOW);   // Apagar LED 1
+
+  digitalWrite(8, HIGH);   // Encender LED 2
+  delay(tiempo);           // Esperar según el potenciómetro
+  digitalWrite(8, LOW);    // Apagar LED 2
+}
+```
+
+En resumen:
+
+*El programa sigue igual, solo que ahora el potenciómetro controla qué tan rápido parpadean los LEDs, en lugar de tener un tiempo fijo.
+
+<img src=" " width="1024" height="550" />
