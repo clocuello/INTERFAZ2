@@ -609,4 +609,4 @@ En resumen:
 
 *El programa sigue igual, solo que ahora el potenciómetro controla qué tan rápido parpadean los LEDs, en lugar de tener un tiempo fijo.
 
-<img src=" " width="1024" height="550" />
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/led.parpadeante_potenciometro.png" width="1024" height="550" />
