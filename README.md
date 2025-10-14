@@ -1,4 +1,6 @@
 # INTERFAZ II
+
+1.[nombre titulo](pegar link dejar solo lo despues del #) <br>
 ### EJERCICIO N° 1: ARDUINO: "Hola Mundo:)"
 
 ```js
@@ -612,3 +614,10 @@ En resumen:
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/led.parpadeante_potenciometro.png" width="1024" height="550" />
 
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/LedParpadeante%2BPotenciometro.jpg" width="1024" height="550" />
+
+
+sensor de distancia Sharp a Arduino
+
+VIDEO ascii
+
+
