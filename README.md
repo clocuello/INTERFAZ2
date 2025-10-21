@@ -10,6 +10,8 @@
 8.[Arduino + Boton + Potenciometro + Processing](#ejercicio-n-8-arduino--bot%C3%B3n--potenciometro--processing) <br>
 9.[If + Else](#ejercicio-n-9-if--else) <br>
 10.[Botonera](#ejercicio-n-10-botonera) <br>
+11.[Idea Personal](#ejercicio-idea-personal-led-parpadeante--potenciometro) <br>
+
 
 ### EJERCICIO N° 1: ARDUINO: "Hola Mundo:)"
 
