@@ -11,6 +11,8 @@
 9.[If + Else](#ejercicio-n-9-if--else) <br>
 10.[Botonera](#ejercicio-n-10-botonera) <br>
 11.[Idea Personal](#ejercicio-idea-personal-led-parpadeante--potenciometro) <br>
+12.[Sensor Sharp](    ) <br>
+
 
 
 ### EJERCICIO N° 1: ARDUINO: "Hola Mundo:)"
@@ -626,6 +628,69 @@ En resumen:
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/led.parpadeante_potenciometro.png" width="1024" height="550" />
 
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/LedParpadeante%2BPotenciometro.jpg" width="1024" height="550" />
+
+### Ejercicio N° 11: Sensor Sharp
+
+Codigo arduino:
+```js
+// Definir el pin del sensor Sharp
+int sharpPin = A0;
+
+void setup() {
+  Serial.begin(9600); // Iniciar comunicación serial
+}
+
+void loop() {
+  int sensorValue = analogRead(sharpPin); // Leer valor del sensor
+  Serial.println(sensorValue); // Enviar valor a Processing
+  delay(100); // Esperar un momento
+}
+```
+
+Codigo Processing:
+```js
+import processing.serial.*;
+
+Serial myPort;  // Create object from Serial class
+static String val;    // Data received from the serial port
+int sensorVal = 0;
+
+void setup()
+{
+  background(0); 
+  //fullScreen(P3D);
+   size(1080, 720);
+   noStroke();
+  noFill();
+  String portName = "COM5";// Change the number (in this case ) to match the corresponding port number connected to your Arduino. 
+
+  myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+}
+
+void draw()
+{
+  if ( myPort.available() > 0) {  // If data is available,
+  val = myPort.readStringUntil('\n'); 
+  try {
+   sensorVal = Integer.valueOf(val.trim());
+  }
+  catch(Exception e) {
+  ;
+  }
+  println(sensorVal); // read it and store it in vals!
+  }  
+ //background(0);
+  // Scale the mouseX value from 0 to 640 to a range between 0 and 175
+  float c = map(sensorVal, 0, width, 0, 400);
+  // Scale the mouseX value from 0 to 640 to a range between 40 and 300
+  float d = map(sensorVal, 0, width, 40,500);
+  fill(255, c, 0);
+  ellipse(width/2, height/2, d, d);   
+
+}
+```
+<img src="" width="1024" height="550" />
+
 
 
 sensor de distancia Sharp a Arduino
