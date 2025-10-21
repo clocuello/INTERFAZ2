@@ -629,7 +629,7 @@ En resumen:
 
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/LedParpadeante%2BPotenciometro.jpg" width="1024" height="550" />
 
-### Ejercicio N° 11: Sensor Sharp
+### Ejercicio N° 11: SENSOR SHARP
 
 Codigo arduino:
 ```js
@@ -689,7 +689,25 @@ void draw()
 
 }
 ```
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/sensorsharp.jpg" width="1024" height="550" />
+
+### Ejercicio N° 12: SENSOR DE HUMEDAD
+
+```js
+void setup()
+{
+  Serial.begin(9600);// abre el puerto serial y Establece la velocidad en baudios a 9600 bps
+}
+void loop()
+{
+  int sensorValue;
+  sensorValue = analogRead(0);   //conectar el sensor de humedad al pin analogo 0
+  Serial.println(sensorValue); //imprime el valor a serial.
+  delay(200);
+}
+```
 <img src="" width="1024" height="550" />
+
 
 
 
