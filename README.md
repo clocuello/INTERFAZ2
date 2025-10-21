@@ -832,7 +832,7 @@ Codigo Processing:
 ```
 
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/pi.jpg" width="1024" height="550" />
-<img src="" width="1024" height="550" />
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/pip.png" width="1024" height="550" />
 
 
 
