@@ -810,7 +810,9 @@ void draw() {
 }
 ```
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/cvss.jpg" width="1024" height="550" />
-<img src="" width="1024" height="550" />
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/ssp.png" width="1024" height="550" />
+
+
 
 
 
