@@ -812,11 +812,30 @@ void draw() {
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/cvss.jpg" width="1024" height="550" />
 <img src="https://github.com/clocuello/INTERFAZ2/blob/main/ssp.png" width="1024" height="550" />
 
+### Ejercicio N° 14: PROMEDIO DE IMAGENES
+
+Codigo Arduino:
+```js
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int potValue = analogRead(A0);
+  Serial.println(potValue);
+  delay(20);
+}
+```
+
+Codigo Processing:
+```js
+```
 
 
 
 
 
-VIDEO ascii
+
+
 
 
