@@ -1290,8 +1290,8 @@ Este es el código final y modificado, las zonas subrayadas en verde son las zon
 ```js
 import processing.serial.*;
 
-Serial myPort; "NEDRO NEDRO NEDRO";
-String textToShow =
+Serial myPort;
+String textToShow = "NEDRO NEDRO NEDRO";
 ArrayList<PVector> trail = new ArrayList<PVector>();
 
 float potValue = 0; // valor leído del Arduino
