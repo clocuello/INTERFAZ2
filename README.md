@@ -1093,6 +1093,8 @@ PImage[] loadImagesFromFolder(String folderName) {
 
 ### Idea Grupal
 
+Esta proyecto nace desde la idea de hacer desorden en el orden, la intencion de querer ser ordenado pero que se vuelve imposible ser este completamente, por lo que pensamos en crear en Processing una linea de color blanco en la que se vean las letras de la palabra "ORDEN" de forma seguida y que esta palabra se moviera por la pantalla a partir del uso de Arduino y Potenciometro.
+
 Codigo arduino:
 ```js
 int potPin = A0; // Pin del potenciómetro
@@ -1249,6 +1251,9 @@ popMatrix();
 }
 }
 ```
+Con este resultado:
+
+<img src="https://github.com/clocuello/INTERFAZ2/blob/main/Captura%20de%20pantalla%202025-11-03%20101530.png" width="1024" height="550" />
 
 
 despues cambiamos la frase String textToShow = "ANY FURTHER QUESTIONS";
