@@ -15,7 +15,7 @@
 12.[Sensor Humedad](#ejercicio-n-12-sensor-de-humedad) <br>
 13.[Cuerpo, Video, Sensor Sharp](#ejercicio-n-13-cuerpo-video-sensor-sharp) <br>
 14.[Promedio de Imagenes](#ejercicio-n-14-promedio-de-imagenes) <br>
-
+15.[Promedio de imágenes llamando una carpeta + potenciometro]()
 
 
 ### EJERCICIO N° 1: ARDUINO: "Hola Mundo:)"
