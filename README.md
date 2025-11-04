@@ -16,7 +16,7 @@
 13.[Cuerpo, Video, Sensor Sharp](#ejercicio-n-13-cuerpo-video-sensor-sharp) <br>
 14.[Promedio de Imagenes](#ejercicio-n-14-promedio-de-imagenes) <br>
 15.[Promedio de imágenes llamando una carpeta + potenciometro](#ejercicio-n-15-promedio-de-imagenes-llamado-una-carpeta--potenciometro) <br>
---.[Idea Grupal]() <br>
+--.[Idea Grupal](#idea-grupal) <br>
 
 
 ### EJERCICIO N° 1: ARDUINO: "Hola Mundo:)"
